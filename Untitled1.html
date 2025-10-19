@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>对不起</title>
+<style>
+  body {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    text-align: center;
+    padding-top: 80px;
+    background: linear-gradient(120deg, #fff4f8, #ffe6f2);
+  }
+  h1 { color: #ff4d6d; font-size: 40px; }
+  .message { font-size: 22px; margin: 20px; color: #555; }
+  img { 
+    width: var(--img-width, 500px);   /* 默认宽度 */
+    height: var(--img-height, 400px); /* 默认高度 */
+    border-radius: 0;
+    margin: 20px; 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2); 
+    object-fit: contain; /* 保持完整图片 */
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .heart { color: #ff4d6d; animation: beat 1.5s infinite; }
+  @keyframes beat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    40% { transform: scale(1); }
+    60% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+</style>
+</head>
+<body>
+<h1>对不起，宝贝 💔</h1>
+<div class="message">这次是我错了，让你不开心了</div>
+<div class="message">我会用行动改正，不让你再难过</div>
+
+<!-- 在这里设置你想要的宽高 -->
+<img 
+  src="https://raw.githubusercontent.com/shit-eater110/yhd/main/3.jpg" 
+  alt="我们的合照"
+  style="--img-width: 400px; --img-height: 400px;"
+>
+
+<div class="message heart">爱你 ❤️</div>
+
+<!-- 背景音乐（可选）：需将<YOUR_MUSIC_URL>替换为实际音乐链接 -->
+<audio autoplay loop>
+  <source src="https://<YOUR_MUSIC_URL>" type="audio/mpeg">
+</audio>
+</body>
+</html>
